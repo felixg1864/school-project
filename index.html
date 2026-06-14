@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FIX: Full metadata site title preventing browser tab truncation -->
+    <title>Caerphilly Young Entrepreneur Hub</title>
+    <!-- Links directly to your separate style sheet file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SITE-WIDE TOP NAVIGATION -->
+    <header>
+        <div class="nav-container">
+            <a class="logo" onclick="navigateToPage('home')">Caerphilly Young Entrepreneur Hub</a>
+            <nav>
+                <a id="nav-link-home" class="active" onclick="navigateToPage('home')">Home</a>
+                <a id="nav-link-about" onclick="navigateToPage('about')">About</a>
+                <a id="nav-link-services" onclick="navigateToPage('services')">Services</a>
+                <a id="nav-link-events" onclick="navigateToPage('events')">Events</a>
+                <a id="nav-link-contact" onclick="navigateToPage('contact')">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTAINER 1: HOME PAGE -->
+    <div id="page-home" class="page active">
+        <section class="hero">
+            <h1>Turn your idea into something real.</h1>
+            <p>The Caerphilly Young Entrepreneur Hub offers free workshops, one-to-one support, and resources for young people aged 16-25 across the Caerphilly borough who want to start their own business.</p>
+            <button class="btn" onclick="navigateToPage('services')">Find out more &rarr;</button>
+        </section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">87%</div>
+                <p>"of young people we spoke to in Caerphilly had thought about starting a business"</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">73%</div>
+                <p>"didn't know where to get local business support"</p>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">80%</div>
+                <p>"said the main barrier was simply not knowing where to start"</p>
+            </div>
+        </section>
+
+        <h2>What we offer</h2>
+        <section class="cards-grid">
+            <div class="feature-card">
+                <div class="icon-wrap">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                </div>
+                <h3>Workshops</h3>
+                <p>"A six-session programme covering everything from turning your idea into a concept to pitching it confidently. Practical, hands-on, and completely free."</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-wrap">
+                    <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                </div>
+                <h3>1:1 Sessions</h3>
+                <p>"Not a group session person? Book a one-to-one advisory session and get support tailored to your specific idea and situation."</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon-wrap">
+                    <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="2" y1="20" x2="22" y2="20"></line><line x1="12" y1="17" x2="12" y2="20"></line></svg>
+                </div>
+                <h3>Online Resources</h3>
+                <p>"Can't make it in person? Our online hub gives you access to guides, templates, and links to funding opportunities &mdash; available any time."</p>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <div class="quote-text">"I had the idea for months but didn't know how to make it happen. The hub gave me a structure I could follow."</div>
+            <div class="quote-author">Workshop attendee based in Caerphilly</div>
+        </section>
+
+        <!-- FIX: Form entirely absent on Home page -->
+        <section class="cta-strip">
+            <h2>Ready to get started?</h2>
+            <p>Our sessions are free, local, and designed for people starting from scratch. No experience needed.</p>
+            <button class="btn" onclick="navigateToPage('contact')">Get in touch</button>
+        </section>
+    </div>
+    <!-- CONTAINER 2: ABOUT PAGE -->
+    <div id="page-about" class="page">
+        <h1>Built by a young person, for young people.</h1>
+        <div class="about-body">
+            <!-- FIX: Personal narrative copy restored perfectly -->
+            <p>"The Caerphilly Young Entrepreneur Hub was set up because of a gap that I ran into personally. As a sixth form student in Caerphilly trying to build my own business, I found that every piece of meaningful support required travelling to Cardiff, navigating services aimed at established businesses, or paying for advice I couldn't afford. The appetite to start something was there &mdash; I just couldn't find the local, accessible guidance to turn it into anything.</p>
+            <p>After speaking to other young people across the borough and finding that 73% didn't know where to get local enterprise support, it became clear this wasn't just my experience. The hub exists to change that."</p>
+        </div>
+
+        <h2>What we believe</h2>
+        <section class="beliefs-grid">
+            <div class="belief-card">
+                <h3>Support should be local.</h3>
+                <p>"If you need to travel to Cardiff to access business support, it's not accessible. Everything we do is based in the Caerphilly borough."</p>
+            </div>
+            <div class="belief-card">
+                <h3>Free means genuinely free.</h3>
+                <p>"There are no session fees, no memberships, and no catches. Cost was identified as a major barrier to starting a business &mdash; so we've removed it entirely."</p>
+            </div>
+            <div class="belief-card">
+                <h3>Starting from scratch is fine.</h3>
+                <p>"You don't need a business degree or existing experience to come to the hub. We're designed for people with an idea and no idea where to start."</p>
+            </div>
+        </section>
+
+        <h2 style="margin-top:50px;">Contributing to a better Wales.</h2>
+        <div class="about-body">
+            <p>"The hub directly supports four of the seven goals of the Well-being of Future Generations (Wales) Act 2015: a Prosperous Wales, a More Equal Wales, a Wales of Cohesive Communities, and a Resilient Wales. By investing in the economic skills and ambitions of young people in Caerphilly, we're contributing to a Wales where opportunity doesn't depend on where you grew up."</p>
+        </div>
+    </div>
+
+    <!-- CONTAINER 3: SERVICES PAGE -->
+    <div id="page-services" class="page">
+        <h1>What we offer.</h1>
+        <p class="services-intro">Everything at the hub is free and designed specifically for 16-25 year olds in the Caerphilly borough.</p>
+
+        <h2>The Workshop Programme</h2>
+        <div class="sessions-list">
+            <!-- FIX: Completely accurate structured session texts -->
+            <div class="session-card">
+                <div class="session-label">Session 1</div>
+                <h3>Turning Your Idea Into a Concept</h3>
+                <p>"What makes a viable business? We'll introduce the Business Model Canvas, help you identify your target customer, and start to shape your idea into something concrete."</p>
+            </div>
+            <div class="session-card">
+                <div class="session-label">Session 2</div>
+                <h3>Writing a Business Plan</h3>
+                <p>"A clear, one-page business plan is one of the most useful things you can have. We'll work through the key sections together and leave you with a draft you can actually use."</p>
+            </div>
+            <div class="session-card">
+                <div class="session-label">Session 3</div>
+                <h3>Finding Funding and Grants</h3>
+                <p>"Where does the money come from? We'll cover grants, loans, and self-funding options available to young entrepreneurs in Wales &mdash; including Business Wales, Start Up Loans, and the Prince's Trust."</p>
+            </div>
+            <div class="session-card">
+                <div class="session-label">Session 4</div>
+                <h3>Marketing for Beginners</h3>
+                <p>"How do you get people to find you? We'll cover branding basics, social media strategy, and low-cost ways to build an audience before you even launch."</p>
+            </div>
+            <div class="session-card">
+                <div class="session-label">Session 5</div>
+                <h3>Legal, Financial, and Self-Employment Basics</h3>
+                <p>"The admin side of running a business doesn't have to be scary. We'll walk through registering as self-employed, basic record-keeping, and what you actually need to know about tax."</p>
+            </div>
+            <div class="session-card">
+                <div class="session-label">Session 6</div>
+                <h3>Pitching Your Idea and Next Steps</h3>
+                <p>"How do you explain your business to someone who's never heard of it? We'll practice pitching confidently and finish with a clear plan for what to do next. This includes signposting to longer-term support."</p>
+            </div>
+        </div>
+
+        <div class="split-services-row">
+            <!-- FIX: Text says "we'll work through it with you" -->
+            <div>
+                <h2>Prefer one-to-one support?</h2>
+                <p>"Not everyone wants to work through ideas in a group setting &mdash; and that's completely fine. You can book a one-to-one advisory session and get focused support on whatever stage you're at. Whether you've got a half-formed idea or you're further along and need help with a specific challenge, we'll work through it with you."</p>
+                <button class="btn" style="margin-top:10px;" onclick="navigateToPage('contact')">Book a 1:1 session</button>
+            </div>
+            <!-- FIX: Removed fake learn recordings/portals -->
+            <div>
+                <h2>Can't make it in person?</h2>
+                <p>"Our online resources section has guides, templates, and links to funding opportunities you can access any time. It covers all six workshop topics and is updated regularly. If you've missed a session or just want to go at your own pace, it's all there."</p>
+            </div>
+        </div>
+    </div>
+    <!-- CONTAINER 4: EVENTS PAGE -->
+    <div id="page-events" class="page">
+        <h1>Upcoming sessions.</h1>
+        <p class="events-intro">Our six-session programme runs fortnightly on weekday evenings in Caerphilly town centre. All sessions are free and open to anyone aged 16-25 in the borough.</p>
+
+        <!-- FIX: Clean "Coming: Autumn 2026" timelines completely scrubbing out old fake expos -->
+        <div class="events-stack">
+            <div class="event-item">
+                <div class="event-tags">
+                    <span>📅 Coming: Autumn 2026</span>
+                    <span>📍 Caerphilly town centre (venue confirmed on registration)</span>
+                    <span>⏱️ Duration: 90 minutes</span>
+                    <span>🏷️ Cost: Free</span>
+                </div>
+                <h3>Session 1 — Turning Your Idea Into a Concept</h3>
+                <p>"The first session of our new cohort. Whether you've got a business idea already or you're still figuring out what you want to do, this is the place to start."</p>
+                <button class="btn" style="align-self: flex-start;" onclick="navigateToPage('contact')">Register interest</button>
+            </div>
+
+            <div class="event-item">
+                <div class="event-tags">
+                    <span>📅 Coming: Autumn 2026</span>
+                    <span>📍 Caerphilly town centre</span>
+                    <span>⏱️ Duration: 90 minutes</span>
+                    <span>🏷️ Cost: Free</span>
+                </div>
+                <h3>Session 2 — Writing a Business Plan</h3>
+                <p>"Building on Session 1, we'll work through the key elements of a simple, one-page business plan."</p>
+                <button class="btn" style="align-self: flex-start;" onclick="navigateToPage('contact')">Register interest</button>
+            </div>
+
+            <div class="event-item">
+                <div class="event-tags">
+                    <span>📅 Coming: Autumn 2026</span>
+                    <span>📍 Caerphilly town centre</span>
+                    <span>⏱️ Duration: 90 minutes</span>
+                    <span>🏷️ Cost: Free</span>
+                </div>
+                <h3>Session 3 — Finding Funding and Grants</h3>
+                <p>"One of the most popular topics &mdash; where the money actually comes from, and how to apply for it."</p>
+                <button class="btn" style="align-self: flex-start;" onclick="navigateToPage('contact')">Register interest</button>
+            </div>
+        </div>
+
+        <div style="margin-top: 50px; padding:30px; border-left:4px solid var(--primary-green); background:#fdfdfd;">
+            <h3>Can't make a session?</h3>
+            <p style="margin-bottom:0;">"We know life gets in the way. If you register and can't attend, just let us know and we'll keep you on the list for future cohorts."</p>
+        </div>
+    </div>
+
+    <!-- CONTAINER 5: CONTACT PAGE (THE ONLY PLACE FOR THE FORM) -->
+    <div id="page-contact" class="page">
+        <h1>Get in touch.</h1>
+        <p class="contact-intro">Whether you want to register for a workshop, book a 1:1 session, or just find out more, fill in the form below and we'll get back to you within a few days.</p>
+
+        <div class="contact-layout">
+            <form class="main-form" onsubmit="event.preventDefault(); alert('Message sent simulated!');">
+                <div class="input-group">
+                    <label for="frm-name">Full name</label>
+                    <input type="text" id="frm-name" required placeholder="Your full name">
+                </div>
+                <div class="input-group">
+                    <label for="frm-email">Email address</label>
+                    <input type="email" id="frm-email" required placeholder="you@example.co.uk">
+                </div>
+                <!-- FIX: Simple text input box for age compliance -->
+                <div class="input-group">
+                    <label for="frm-age">Age (just so we can make sure we're reaching the right people)</label>
+                    <input type="text" id="frm-age" required placeholder="e.g. 19">
+                </div>
+                <div class="input-group">
+                    <label for="frm-msg">Message / what are you interested in?</label>
+                    <textarea id="frm-msg" rows="5" required placeholder="Let us know what you need help with..."></textarea>
+                </div>
+                <button type="submit" class="btn" style="align-self: flex-start;">Send message</button>
+            </form>
+
+            <div class="meta-details-pane">
+                <div class="info-block">
+                    <h4>Email Address</h4>
+                    <p>info@caerphillyyounghub.co.uk</p>
+                </div>
+                <div class="info-block">
+                    <h4>Location</h4>
+                    <p>Sessions are held in Caerphilly town centre. The exact venue will be confirmed when you register &mdash; it's within walking distance of Caerphilly bus station and town centre.</p>
+                </div>
+                <div class="info-block">
+                    <h4>Sessions Schedule</h4>
+                    <p>Fortnightly on weekday evenings. Exact dates and times sent on registration.</p>
+                </div>
+            </div>
+            
+            <div class="small-print" style="grid-column: 1 / -1;">
+                <p>"We aim to respond within 3-5 working days. The hub operates as a free community initiative and is run as a non-commercial organisation."</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SITE-WIDE GLOBAL FOOTER -->
+    <footer>
+        <div class="footer-tagline">Caerphilly Young Entrepreneur Hub — Empowering the Next Generation</div>
+        <div class="footer-socials">
+            <span>[Facebook]</span>
+            <span>[Instagram]</span>
+            <span>[LinkedIn]</span>
+        </div>
+        <div class="footer-copyright">&copy; 2026 Caerphilly Young Entrepreneur Hub. All rights reserved.</div>
+    </footer>
+
+    <!-- LIVE ROUTING ENGINE -->
+    <script>
+        function navigateToPage(targetPageId) {
+            const dynamicViews = document.querySelectorAll('.page');
+            dynamicViews.forEach(view => view.classList.remove('active'));
+            
+            document.getElementById('page-' + targetPageId).classList.add('active');
+            
+            const anchorLinks = document.querySelectorAll('nav a');
+            anchorLinks.forEach(link => link.classList.remove('active'));
+            
+            document.getElementById('nav-link-' + targetPageId).classList.add('active');
+            window.scrollTo({top: 0, behavior: 'instant'});
+        }
+    </script>
+</body>
+</html>
